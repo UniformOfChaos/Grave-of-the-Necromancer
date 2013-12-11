@@ -45,6 +45,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Battle.cs" />
+    <Compile Include="ChooseClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChooseClass.Designer.cs">
+      <DependentUpon>ChooseClass.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dump.cs" />
     <Compile Include="Monsters.cs">
       <SubType>Code</SubType>
@@ -65,6 +71,9 @@
     <Compile Include="Level.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ChooseClass.resx">
+      <DependentUpon>ChooseClass.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GameWindow.resx">
       <DependentUpon>GameWindow.cs</DependentUpon>
     </EmbeddedResource>

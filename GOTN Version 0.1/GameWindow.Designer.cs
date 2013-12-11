@@ -30,30 +30,33 @@
         {
             this.mainPanel = new System.Windows.Forms.Panel();
             this.playerInfoPanel = new System.Windows.Forms.Panel();
-            this.textInfoPanel = new System.Windows.Forms.Panel();
-            this.dungeonInfoPanel = new System.Windows.Forms.Panel();
-            this.infoText = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.healthLabel = new System.Windows.Forms.Label();
-            this.manaLabel = new System.Windows.Forms.Label();
-            this.bodyLabel = new System.Windows.Forms.Label();
-            this.mindLabel = new System.Windows.Forms.Label();
             this.levelLabel = new System.Windows.Forms.Label();
-            this.healthNumber = new System.Windows.Forms.Label();
-            this.manaNumber = new System.Windows.Forms.Label();
-            this.bodyNumber = new System.Windows.Forms.Label();
-            this.mindNumber = new System.Windows.Forms.Label();
+            this.mindLabel = new System.Windows.Forms.Label();
+            this.bodyLabel = new System.Windows.Forms.Label();
+            this.manaLabel = new System.Windows.Forms.Label();
             this.levelNumber = new System.Windows.Forms.Label();
+            this.mindNumber = new System.Windows.Forms.Label();
+            this.bodyNumber = new System.Windows.Forms.Label();
+            this.manaNumber = new System.Windows.Forms.Label();
+            this.healthNumber = new System.Windows.Forms.Label();
+            this.healthLabel = new System.Windows.Forms.Label();
+            this.textInfoPanel = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.infoText = new System.Windows.Forms.TextBox();
+            this.dungeonInfoPanel = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnNewGame = new System.Windows.Forms.Button();
             this.playerInfoPanel.SuspendLayout();
             this.textInfoPanel.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainPanel
             // 
             this.mainPanel.BackColor = System.Drawing.Color.White;
-            this.mainPanel.Location = new System.Drawing.Point(4, 3);
+            this.mainPanel.Location = new System.Drawing.Point(4, 32);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(578, 296);
+            this.mainPanel.Size = new System.Drawing.Size(578, 267);
             this.mainPanel.TabIndex = 0;
             // 
             // playerInfoPanel
@@ -74,64 +77,27 @@
             this.playerInfoPanel.Size = new System.Drawing.Size(170, 170);
             this.playerInfoPanel.TabIndex = 1;
             // 
-            // textInfoPanel
+            // levelLabel
             // 
-            this.textInfoPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.textInfoPanel.Controls.Add(this.textBox1);
-            this.textInfoPanel.Controls.Add(this.infoText);
-            this.textInfoPanel.Location = new System.Drawing.Point(180, 305);
-            this.textInfoPanel.Name = "textInfoPanel";
-            this.textInfoPanel.Size = new System.Drawing.Size(226, 170);
-            this.textInfoPanel.TabIndex = 2;
+            this.levelLabel.AutoSize = true;
+            this.levelLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.levelLabel.Location = new System.Drawing.Point(20, 134);
+            this.levelLabel.Name = "levelLabel";
+            this.levelLabel.Size = new System.Drawing.Size(65, 20);
+            this.levelLabel.TabIndex = 0;
+            this.levelLabel.Text = "LEVEL";
+            this.levelLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // dungeonInfoPanel
+            // mindLabel
             // 
-            this.dungeonInfoPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.dungeonInfoPanel.Location = new System.Drawing.Point(412, 305);
-            this.dungeonInfoPanel.Name = "dungeonInfoPanel";
-            this.dungeonInfoPanel.Size = new System.Drawing.Size(170, 170);
-            this.dungeonInfoPanel.TabIndex = 3;
-            // 
-            // infoText
-            // 
-            this.infoText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.infoText.Location = new System.Drawing.Point(6, 3);
-            this.infoText.Multiline = true;
-            this.infoText.Name = "infoText";
-            this.infoText.ReadOnly = true;
-            this.infoText.Size = new System.Drawing.Size(217, 130);
-            this.infoText.TabIndex = 0;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(6, 139);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(217, 20);
-            this.textBox1.TabIndex = 1;
-            // 
-            // healthLabel
-            // 
-            this.healthLabel.AutoSize = true;
-            this.healthLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.healthLabel.Location = new System.Drawing.Point(20, 9);
-            this.healthLabel.Name = "healthLabel";
-            this.healthLabel.Size = new System.Drawing.Size(79, 20);
-            this.healthLabel.TabIndex = 0;
-            this.healthLabel.Text = "HEALTH";
-            this.healthLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.healthLabel.Click += new System.EventHandler(this.healthLabel_Click);
-            // 
-            // manaLabel
-            // 
-            this.manaLabel.AutoSize = true;
-            this.manaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.manaLabel.Location = new System.Drawing.Point(20, 38);
-            this.manaLabel.Name = "manaLabel";
-            this.manaLabel.Size = new System.Drawing.Size(59, 20);
-            this.manaLabel.TabIndex = 0;
-            this.manaLabel.Text = "MANA";
-            this.manaLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.manaLabel.Click += new System.EventHandler(this.manaLabel_Click);
+            this.mindLabel.AutoSize = true;
+            this.mindLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mindLabel.Location = new System.Drawing.Point(20, 101);
+            this.mindLabel.Name = "mindLabel";
+            this.mindLabel.Size = new System.Drawing.Size(54, 20);
+            this.mindLabel.TabIndex = 0;
+            this.mindLabel.Text = "MIND";
+            this.mindLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // bodyLabel
             // 
@@ -145,75 +111,17 @@
             this.bodyLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bodyLabel.Click += new System.EventHandler(this.bodyLabel_Click);
             // 
-            // mindLabel
+            // manaLabel
             // 
-            this.mindLabel.AutoSize = true;
-            this.mindLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mindLabel.Location = new System.Drawing.Point(20, 101);
-            this.mindLabel.Name = "mindLabel";
-            this.mindLabel.Size = new System.Drawing.Size(54, 20);
-            this.mindLabel.TabIndex = 0;
-            this.mindLabel.Text = "MIND";
-            this.mindLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // levelLabel
-            // 
-            this.levelLabel.AutoSize = true;
-            this.levelLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.levelLabel.Location = new System.Drawing.Point(20, 134);
-            this.levelLabel.Name = "levelLabel";
-            this.levelLabel.Size = new System.Drawing.Size(65, 20);
-            this.levelLabel.TabIndex = 0;
-            this.levelLabel.Text = "LEVEL";
-            this.levelLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // healthNumber
-            // 
-            this.healthNumber.AutoSize = true;
-            this.healthNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.healthNumber.Location = new System.Drawing.Point(105, 9);
-            this.healthNumber.Name = "healthNumber";
-            this.healthNumber.Size = new System.Drawing.Size(39, 20);
-            this.healthNumber.TabIndex = 0;
-            this.healthNumber.Text = "100";
-            this.healthNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.healthNumber.Click += new System.EventHandler(this.healthLabel_Click);
-            // 
-            // manaNumber
-            // 
-            this.manaNumber.AutoSize = true;
-            this.manaNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.manaNumber.Location = new System.Drawing.Point(105, 38);
-            this.manaNumber.Name = "manaNumber";
-            this.manaNumber.Size = new System.Drawing.Size(39, 20);
-            this.manaNumber.TabIndex = 0;
-            this.manaNumber.Text = "100";
-            this.manaNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.manaNumber.Click += new System.EventHandler(this.healthLabel_Click);
-            // 
-            // bodyNumber
-            // 
-            this.bodyNumber.AutoSize = true;
-            this.bodyNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bodyNumber.Location = new System.Drawing.Point(105, 68);
-            this.bodyNumber.Name = "bodyNumber";
-            this.bodyNumber.Size = new System.Drawing.Size(29, 20);
-            this.bodyNumber.TabIndex = 0;
-            this.bodyNumber.Text = "10";
-            this.bodyNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bodyNumber.Click += new System.EventHandler(this.healthLabel_Click);
-            // 
-            // mindNumber
-            // 
-            this.mindNumber.AutoSize = true;
-            this.mindNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mindNumber.Location = new System.Drawing.Point(105, 101);
-            this.mindNumber.Name = "mindNumber";
-            this.mindNumber.Size = new System.Drawing.Size(29, 20);
-            this.mindNumber.TabIndex = 0;
-            this.mindNumber.Text = "10";
-            this.mindNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.mindNumber.Click += new System.EventHandler(this.healthLabel_Click);
+            this.manaLabel.AutoSize = true;
+            this.manaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.manaLabel.Location = new System.Drawing.Point(20, 38);
+            this.manaLabel.Name = "manaLabel";
+            this.manaLabel.Size = new System.Drawing.Size(59, 20);
+            this.manaLabel.TabIndex = 0;
+            this.manaLabel.Text = "MANA";
+            this.manaLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.manaLabel.Click += new System.EventHandler(this.manaLabel_Click);
             // 
             // levelNumber
             // 
@@ -227,9 +135,123 @@
             this.levelNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.levelNumber.Click += new System.EventHandler(this.healthLabel_Click);
             // 
+            // mindNumber
+            // 
+            this.mindNumber.AutoSize = true;
+            this.mindNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mindNumber.Location = new System.Drawing.Point(105, 101);
+            this.mindNumber.Name = "mindNumber";
+            this.mindNumber.Size = new System.Drawing.Size(29, 20);
+            this.mindNumber.TabIndex = 0;
+            this.mindNumber.Text = "10";
+            this.mindNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.mindNumber.Click += new System.EventHandler(this.healthLabel_Click);
+            // 
+            // bodyNumber
+            // 
+            this.bodyNumber.AutoSize = true;
+            this.bodyNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bodyNumber.Location = new System.Drawing.Point(105, 68);
+            this.bodyNumber.Name = "bodyNumber";
+            this.bodyNumber.Size = new System.Drawing.Size(29, 20);
+            this.bodyNumber.TabIndex = 0;
+            this.bodyNumber.Text = "10";
+            this.bodyNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bodyNumber.Click += new System.EventHandler(this.healthLabel_Click);
+            // 
+            // manaNumber
+            // 
+            this.manaNumber.AutoSize = true;
+            this.manaNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.manaNumber.Location = new System.Drawing.Point(105, 38);
+            this.manaNumber.Name = "manaNumber";
+            this.manaNumber.Size = new System.Drawing.Size(39, 20);
+            this.manaNumber.TabIndex = 0;
+            this.manaNumber.Text = "100";
+            this.manaNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.manaNumber.Click += new System.EventHandler(this.healthLabel_Click);
+            // 
+            // healthNumber
+            // 
+            this.healthNumber.AutoSize = true;
+            this.healthNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.healthNumber.Location = new System.Drawing.Point(105, 9);
+            this.healthNumber.Name = "healthNumber";
+            this.healthNumber.Size = new System.Drawing.Size(39, 20);
+            this.healthNumber.TabIndex = 0;
+            this.healthNumber.Text = "100";
+            this.healthNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.healthNumber.Click += new System.EventHandler(this.healthLabel_Click);
+            // 
+            // healthLabel
+            // 
+            this.healthLabel.AutoSize = true;
+            this.healthLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.healthLabel.Location = new System.Drawing.Point(20, 9);
+            this.healthLabel.Name = "healthLabel";
+            this.healthLabel.Size = new System.Drawing.Size(79, 20);
+            this.healthLabel.TabIndex = 0;
+            this.healthLabel.Text = "HEALTH";
+            this.healthLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.healthLabel.Click += new System.EventHandler(this.healthLabel_Click);
+            // 
+            // textInfoPanel
+            // 
+            this.textInfoPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.textInfoPanel.Controls.Add(this.textBox1);
+            this.textInfoPanel.Controls.Add(this.infoText);
+            this.textInfoPanel.Location = new System.Drawing.Point(180, 305);
+            this.textInfoPanel.Name = "textInfoPanel";
+            this.textInfoPanel.Size = new System.Drawing.Size(226, 170);
+            this.textInfoPanel.TabIndex = 2;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(6, 139);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(217, 20);
+            this.textBox1.TabIndex = 1;
+            // 
+            // infoText
+            // 
+            this.infoText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.infoText.Location = new System.Drawing.Point(6, 3);
+            this.infoText.Multiline = true;
+            this.infoText.Name = "infoText";
+            this.infoText.ReadOnly = true;
+            this.infoText.Size = new System.Drawing.Size(217, 130);
+            this.infoText.TabIndex = 0;
+            // 
+            // dungeonInfoPanel
+            // 
+            this.dungeonInfoPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.dungeonInfoPanel.Location = new System.Drawing.Point(412, 305);
+            this.dungeonInfoPanel.Name = "dungeonInfoPanel";
+            this.dungeonInfoPanel.Size = new System.Drawing.Size(170, 170);
+            this.dungeonInfoPanel.TabIndex = 3;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btnNewGame);
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(579, 23);
+            this.panel1.TabIndex = 4;
+            // 
+            // btnNewGame
+            // 
+            this.btnNewGame.Location = new System.Drawing.Point(0, 0);
+            this.btnNewGame.Name = "btnNewGame";
+            this.btnNewGame.Size = new System.Drawing.Size(75, 23);
+            this.btnNewGame.TabIndex = 0;
+            this.btnNewGame.Text = "New Game";
+            this.btnNewGame.UseVisualStyleBackColor = true;
+            this.btnNewGame.Click += new System.EventHandler(this.btnNewGame_Click);
+            // 
             // Title
             // 
             this.ClientSize = new System.Drawing.Size(588, 481);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.dungeonInfoPanel);
             this.Controls.Add(this.textInfoPanel);
             this.Controls.Add(this.playerInfoPanel);
@@ -241,6 +263,7 @@
             this.playerInfoPanel.PerformLayout();
             this.textInfoPanel.ResumeLayout(false);
             this.textInfoPanel.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -263,6 +286,8 @@
         private System.Windows.Forms.Label bodyNumber;
         private System.Windows.Forms.Label manaNumber;
         private System.Windows.Forms.Label healthNumber;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnNewGame;
     }
 }
 

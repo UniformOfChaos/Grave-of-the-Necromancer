@@ -36,5 +36,10 @@ namespace GOTN_Version_0._1
         {
 
         }
+
+        private void btnNewGame_Click(object sender, EventArgs e)
+        {
+            // Reset player's stats to default
+        }
     }
 }
