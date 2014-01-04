@@ -8,18 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GOTN_Version_0._1
+namespace GameWindow
 {
-    public partial class Title : Form
+    public partial class GameWindow : Form
     {
-        public Title()
+        public GameWindow()
         {
             InitializeComponent();
         }
 
-        private void GOTN_Title_Load(object sender, EventArgs e)
+        private void GOTN_GameWindow_Load(object sender, EventArgs e)
         {
             InitializeComponent();
+            
         }
 
         private void bodyLabel_Click(object sender, EventArgs e)
@@ -37,9 +38,12 @@ namespace GOTN_Version_0._1
 
         }
 
-        private void btnNewGame_Click(object sender, EventArgs e)
+        private void tsNewGame_Click(object sender, EventArgs e)
         {
-            // Reset player's stats to default
+            // Open the Choose Class form
+            ChooseClass chooseClass = new ChooseClass();
+            chooseClass.Show();
+            chooseClass.Enabled = true;
         }
     }
 }

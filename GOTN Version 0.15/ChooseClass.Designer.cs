@@ -1,4 +1,4 @@
-﻿namespace GOTN_Version_0._1
+﻿namespace GameWindow
 {
     partial class ChooseClass
     {

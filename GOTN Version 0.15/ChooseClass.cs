@@ -8,10 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GOTN_Version_0._1
+namespace GameWindow
 {
     public partial class ChooseClass : Form
     {
+
         public bool isWarrior;
         public bool isRogue;
         public bool isWizard;
@@ -20,8 +21,6 @@ namespace GOTN_Version_0._1
         {
             InitializeComponent();
         }
-
-        
 
         private void btnSelectWarrior_Click(object sender, EventArgs e)
         {
@@ -46,8 +45,7 @@ namespace GOTN_Version_0._1
 
         private void ChooseClass_Load(object sender, EventArgs e)
         {
-            // Hide All the Things, except the New Game Button
-            
+               
         }
      }
 }

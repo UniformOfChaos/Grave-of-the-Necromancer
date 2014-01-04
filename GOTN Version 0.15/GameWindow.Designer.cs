@@ -1,6 +1,6 @@
-﻿namespace GOTN_Version_0._1
+﻿namespace GameWindow
 {
-    partial class Title
+    partial class GameWindow
     {
         /// <summary>
         /// Required designer variable.
@@ -45,10 +45,17 @@
             this.infoText = new System.Windows.Forms.TextBox();
             this.dungeonInfoPanel = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnNewGame = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.tsMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsNewGame = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.quitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.quitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.playerInfoPanel.SuspendLayout();
             this.textInfoPanel.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainPanel
@@ -232,23 +239,66 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.btnNewGame);
+            this.panel1.Controls.Add(this.menuStrip1);
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(579, 23);
             this.panel1.TabIndex = 4;
             // 
-            // btnNewGame
+            // menuStrip1
             // 
-            this.btnNewGame.Location = new System.Drawing.Point(0, 0);
-            this.btnNewGame.Name = "btnNewGame";
-            this.btnNewGame.Size = new System.Drawing.Size(75, 23);
-            this.btnNewGame.TabIndex = 0;
-            this.btnNewGame.Text = "New Game";
-            this.btnNewGame.UseVisualStyleBackColor = true;
-            this.btnNewGame.Click += new System.EventHandler(this.btnNewGame_Click);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsMenu});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(579, 24);
+            this.menuStrip1.TabIndex = 1;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // Title
+            // tsMenu
+            // 
+            this.tsMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsNewGame,
+            this.saveGameToolStripMenuItem,
+            this.optionsToolStripMenuItem,
+            this.quitToolStripMenuItem,
+            this.quitToolStripMenuItem1});
+            this.tsMenu.Name = "tsMenu";
+            this.tsMenu.Size = new System.Drawing.Size(50, 20);
+            this.tsMenu.Text = "Menu";
+            // 
+            // tsNewGame
+            // 
+            this.tsNewGame.Name = "tsNewGame";
+            this.tsNewGame.Size = new System.Drawing.Size(152, 22);
+            this.tsNewGame.Text = "New Game";
+            this.tsNewGame.Click += new System.EventHandler(this.tsNewGame_Click);
+            // 
+            // saveGameToolStripMenuItem
+            // 
+            this.saveGameToolStripMenuItem.Name = "saveGameToolStripMenuItem";
+            this.saveGameToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveGameToolStripMenuItem.Text = "Save Game";
+            // 
+            // optionsToolStripMenuItem
+            // 
+            this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.optionsToolStripMenuItem.Text = "Load Game";
+            // 
+            // quitToolStripMenuItem
+            // 
+            this.quitToolStripMenuItem.Name = "quitToolStripMenuItem";
+            this.quitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.quitToolStripMenuItem.Text = "Options";
+            // 
+            // quitToolStripMenuItem1
+            // 
+            this.quitToolStripMenuItem1.Name = "quitToolStripMenuItem1";
+            this.quitToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.quitToolStripMenuItem1.Text = "Quit";
+            // 
+            // GameWindow
             // 
             this.ClientSize = new System.Drawing.Size(588, 481);
             this.Controls.Add(this.panel1);
@@ -256,14 +306,18 @@
             this.Controls.Add(this.textInfoPanel);
             this.Controls.Add(this.playerInfoPanel);
             this.Controls.Add(this.mainPanel);
-            this.Name = "Title";
+            this.MainMenuStrip = this.menuStrip1;
+            this.Name = "GameWindow";
             this.Text = "Grave of the Necromancer";
-            this.Load += new System.EventHandler(this.GOTN_Title_Load);
+            this.Load += new System.EventHandler(this.GOTN_GameWindow_Load);
             this.playerInfoPanel.ResumeLayout(false);
             this.playerInfoPanel.PerformLayout();
             this.textInfoPanel.ResumeLayout(false);
             this.textInfoPanel.PerformLayout();
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -287,7 +341,13 @@
         private System.Windows.Forms.Label manaNumber;
         private System.Windows.Forms.Label healthNumber;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnNewGame;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem tsMenu;
+        private System.Windows.Forms.ToolStripMenuItem tsNewGame;
+        private System.Windows.Forms.ToolStripMenuItem saveGameToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem optionsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem quitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem quitToolStripMenuItem1;
     }
 }
 

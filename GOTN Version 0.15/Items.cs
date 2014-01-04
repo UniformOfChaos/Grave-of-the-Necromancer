@@ -50,7 +50,7 @@ namespace GOTN_Version_0._1
         // restorePlayerHealth: calls system class method to restore player's health
     }
 
-    class HealthPotion
+    class ManaPotion
     {
         // Mana potions go here
         //restorePlayerMana(); // calls system class method to restore player's mana
