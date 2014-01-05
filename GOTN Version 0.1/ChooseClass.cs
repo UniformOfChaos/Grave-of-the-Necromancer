@@ -7,15 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Player;
 
 namespace GameWindow
 {
     public partial class ChooseClass : Form
     {
-
-        public bool isWarrior;
-        public bool isRogue;
-        public bool isWizard;
 
         public ChooseClass()
         {
@@ -24,28 +21,34 @@ namespace GameWindow
 
         private void btnSelectWarrior_Click(object sender, EventArgs e)
         {
-            isWarrior = true;
-            isRogue = false;
-            isWizard = false;
+            Player.Player.CreatePlayer(1);
+            DisplayPlayerAttributes();
+
         }
 
         private void btnSelectRogue_Click(object sender, EventArgs e)
         {
-            isWarrior = false;
-            isRogue = true;
-            isWizard = false;
+            Player.Player.CreatePlayer(2);
+            DisplayPlayerAttributes();
         }
 
         private void btnSelectWizard_Click(object sender, EventArgs e)
         {
-            isWarrior = false;
-            isRogue = false;
-            isWizard = true;
+            Player.Player.CreatePlayer(3);
+            DisplayPlayerAttributes();
         }
 
         private void ChooseClass_Load(object sender, EventArgs e)
         {
                
+        }
+
+        void DisplayPlayerAttributes()
+        {
+            for (int i = 0; i < 9; i++)
+            {
+                MessageBox.Show(Player.Player.playerAttributes[i]);
+            }
         }
      }
 }

@@ -75,6 +75,7 @@
             // 
             this.WarriorClass_label.AutoSize = true;
             this.WarriorClass_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WarriorClass_label.ForeColor = System.Drawing.Color.White;
             this.WarriorClass_label.Location = new System.Drawing.Point(66, 204);
             this.WarriorClass_label.Name = "WarriorClass_label";
             this.WarriorClass_label.Size = new System.Drawing.Size(71, 24);
@@ -85,6 +86,7 @@
             // 
             this.RogueClass_label.AutoSize = true;
             this.RogueClass_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RogueClass_label.ForeColor = System.Drawing.Color.White;
             this.RogueClass_label.Location = new System.Drawing.Point(264, 204);
             this.RogueClass_label.Name = "RogueClass_label";
             this.RogueClass_label.Size = new System.Drawing.Size(67, 24);
@@ -95,6 +97,7 @@
             // 
             this.WizardClass_label.AutoSize = true;
             this.WizardClass_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WizardClass_label.ForeColor = System.Drawing.Color.White;
             this.WizardClass_label.Location = new System.Drawing.Point(454, 204);
             this.WizardClass_label.Name = "WizardClass_label";
             this.WizardClass_label.Size = new System.Drawing.Size(68, 24);
@@ -111,7 +114,9 @@
             // 
             // btnSelectWarrior
             // 
-            this.btnSelectWarrior.BackColor = System.Drawing.SystemColors.Control;
+            this.btnSelectWarrior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnSelectWarrior.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSelectWarrior.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSelectWarrior.Location = new System.Drawing.Point(22, 349);
             this.btnSelectWarrior.Name = "btnSelectWarrior";
             this.btnSelectWarrior.Size = new System.Drawing.Size(178, 43);
@@ -122,26 +127,33 @@
             // 
             // btnSelectRogue
             // 
+            this.btnSelectRogue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnSelectRogue.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSelectRogue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSelectRogue.Location = new System.Drawing.Point(206, 349);
             this.btnSelectRogue.Name = "btnSelectRogue";
             this.btnSelectRogue.Size = new System.Drawing.Size(178, 43);
             this.btnSelectRogue.TabIndex = 4;
             this.btnSelectRogue.Text = "Select this Class";
-            this.btnSelectRogue.UseVisualStyleBackColor = true;
+            this.btnSelectRogue.UseVisualStyleBackColor = false;
             this.btnSelectRogue.Click += new System.EventHandler(this.btnSelectRogue_Click);
             // 
             // btnSelectWizard
             // 
+            this.btnSelectWizard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnSelectWizard.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSelectWizard.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSelectWizard.Location = new System.Drawing.Point(390, 349);
             this.btnSelectWizard.Name = "btnSelectWizard";
             this.btnSelectWizard.Size = new System.Drawing.Size(178, 43);
             this.btnSelectWizard.TabIndex = 4;
             this.btnSelectWizard.Text = "Select this Class";
-            this.btnSelectWizard.UseVisualStyleBackColor = true;
+            this.btnSelectWizard.UseVisualStyleBackColor = false;
             this.btnSelectWizard.Click += new System.EventHandler(this.btnSelectWizard_Click);
             // 
             // textBox1
             // 
+            this.textBox1.BackColor = System.Drawing.Color.BurlyWood;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Enabled = false;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -154,6 +166,7 @@
             // 
             // textBox2
             // 
+            this.textBox2.BackColor = System.Drawing.Color.BurlyWood;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Enabled = false;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -167,6 +180,7 @@
             // 
             // textBox3
             // 
+            this.textBox3.BackColor = System.Drawing.Color.BurlyWood;
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Enabled = false;
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -182,7 +196,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(596, 433);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);

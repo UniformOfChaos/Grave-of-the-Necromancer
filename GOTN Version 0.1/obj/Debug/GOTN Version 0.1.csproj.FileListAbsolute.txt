@@ -1,8 +1,9 @@
 C:\Users\Kieran\Documents\Uni Stuff\Year 2\Semester 1\SD&I\Projects\GOTN Version 0.1\bin\Debug\GOTN Version 0.1.exe
 C:\Users\Kieran\Documents\Uni Stuff\Year 2\Semester 1\SD&I\Projects\GOTN Version 0.1\bin\Debug\GOTN Version 0.1.pdb
+C:\Users\Kieran\Documents\Uni Stuff\Year 2\Semester 1\SD&I\Projects\GOTN Version 0.1\obj\Debug\GameWindow.ChooseClass.resources
 C:\Users\Kieran\Documents\Uni Stuff\Year 2\Semester 1\SD&I\Projects\GOTN Version 0.1\obj\Debug\GameWindow.GameWindow.resources
-C:\Users\Kieran\Documents\Uni Stuff\Year 2\Semester 1\SD&I\Projects\GOTN Version 0.1\obj\Debug\GOTN_Version_0._1.Inventory.resources
+C:\Users\Kieran\Documents\Uni Stuff\Year 2\Semester 1\SD&I\Projects\GOTN Version 0.1\obj\Debug\Inventory.Inventory.resources
+C:\Users\Kieran\Documents\Uni Stuff\Year 2\Semester 1\SD&I\Projects\GOTN Version 0.1\obj\Debug\GOTN_Version_0._1.Properties.Resources.resources
 C:\Users\Kieran\Documents\Uni Stuff\Year 2\Semester 1\SD&I\Projects\GOTN Version 0.1\obj\Debug\GOTN Version 0.1.csproj.GenerateResource.Cache
 C:\Users\Kieran\Documents\Uni Stuff\Year 2\Semester 1\SD&I\Projects\GOTN Version 0.1\obj\Debug\GOTN Version 0.1.exe
 C:\Users\Kieran\Documents\Uni Stuff\Year 2\Semester 1\SD&I\Projects\GOTN Version 0.1\obj\Debug\GOTN Version 0.1.pdb
-C:\Users\Kieran\Documents\Uni Stuff\Year 2\Semester 1\SD&I\Projects\GOTN Version 0.1\obj\Debug\GameWindow.ChooseClass.resources

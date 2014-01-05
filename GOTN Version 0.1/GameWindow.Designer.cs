@@ -44,8 +44,8 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.infoText = new System.Windows.Forms.TextBox();
             this.dungeonInfoPanel = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menuPanel = new System.Windows.Forms.Panel();
+            this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.tsMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.tsNewGame = new System.Windows.Forms.ToolStripMenuItem();
             this.saveGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,8 +54,8 @@
             this.quitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.playerInfoPanel.SuspendLayout();
             this.textInfoPanel.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
+            this.menuPanel.SuspendLayout();
+            this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainPanel
@@ -68,7 +68,7 @@
             // 
             // playerInfoPanel
             // 
-            this.playerInfoPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.playerInfoPanel.BackColor = System.Drawing.Color.BurlyWood;
             this.playerInfoPanel.Controls.Add(this.levelLabel);
             this.playerInfoPanel.Controls.Add(this.mindLabel);
             this.playerInfoPanel.Controls.Add(this.bodyLabel);
@@ -204,7 +204,7 @@
             // 
             // textInfoPanel
             // 
-            this.textInfoPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.textInfoPanel.BackColor = System.Drawing.Color.BurlyWood;
             this.textInfoPanel.Controls.Add(this.textBox1);
             this.textInfoPanel.Controls.Add(this.infoText);
             this.textInfoPanel.Location = new System.Drawing.Point(180, 305);
@@ -214,46 +214,48 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(6, 139);
+            this.textBox1.Location = new System.Drawing.Point(4, 144);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(217, 20);
+            this.textBox1.Size = new System.Drawing.Size(219, 20);
             this.textBox1.TabIndex = 1;
             // 
             // infoText
             // 
             this.infoText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.infoText.Location = new System.Drawing.Point(6, 3);
+            this.infoText.Location = new System.Drawing.Point(4, 5);
             this.infoText.Multiline = true;
             this.infoText.Name = "infoText";
             this.infoText.ReadOnly = true;
-            this.infoText.Size = new System.Drawing.Size(217, 130);
+            this.infoText.Size = new System.Drawing.Size(219, 135);
             this.infoText.TabIndex = 0;
             // 
             // dungeonInfoPanel
             // 
-            this.dungeonInfoPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.dungeonInfoPanel.BackColor = System.Drawing.Color.BurlyWood;
             this.dungeonInfoPanel.Location = new System.Drawing.Point(412, 305);
             this.dungeonInfoPanel.Name = "dungeonInfoPanel";
             this.dungeonInfoPanel.Size = new System.Drawing.Size(170, 170);
             this.dungeonInfoPanel.TabIndex = 3;
             // 
-            // panel1
+            // menuPanel
             // 
-            this.panel1.Controls.Add(this.menuStrip1);
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(579, 23);
-            this.panel1.TabIndex = 4;
+            this.menuPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.menuPanel.Controls.Add(this.menuStrip);
+            this.menuPanel.Location = new System.Drawing.Point(3, 3);
+            this.menuPanel.Name = "menuPanel";
+            this.menuPanel.Size = new System.Drawing.Size(579, 23);
+            this.menuPanel.TabIndex = 4;
             // 
-            // menuStrip1
+            // menuStrip
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsMenu});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(579, 24);
-            this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip.Name = "menuStrip";
+            this.menuStrip.Size = new System.Drawing.Size(579, 24);
+            this.menuStrip.TabIndex = 1;
+            this.menuStrip.Text = "menuStrip1";
+            this.menuStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // tsMenu
             // 
@@ -300,13 +302,14 @@
             // 
             // GameWindow
             // 
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(588, 481);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.menuPanel);
             this.Controls.Add(this.dungeonInfoPanel);
             this.Controls.Add(this.textInfoPanel);
             this.Controls.Add(this.playerInfoPanel);
             this.Controls.Add(this.mainPanel);
-            this.MainMenuStrip = this.menuStrip1;
+            this.MainMenuStrip = this.menuStrip;
             this.Name = "GameWindow";
             this.Text = "Grave of the Necromancer";
             this.Load += new System.EventHandler(this.GOTN_GameWindow_Load);
@@ -314,10 +317,10 @@
             this.playerInfoPanel.PerformLayout();
             this.textInfoPanel.ResumeLayout(false);
             this.textInfoPanel.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.menuPanel.ResumeLayout(false);
+            this.menuPanel.PerformLayout();
+            this.menuStrip.ResumeLayout(false);
+            this.menuStrip.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -340,8 +343,8 @@
         private System.Windows.Forms.Label bodyNumber;
         private System.Windows.Forms.Label manaNumber;
         private System.Windows.Forms.Label healthNumber;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.Panel menuPanel;
+        private System.Windows.Forms.MenuStrip menuStrip;
         private System.Windows.Forms.ToolStripMenuItem tsMenu;
         private System.Windows.Forms.ToolStripMenuItem tsNewGame;
         private System.Windows.Forms.ToolStripMenuItem saveGameToolStripMenuItem;

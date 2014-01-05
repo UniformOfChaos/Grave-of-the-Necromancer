@@ -45,5 +45,10 @@ namespace GameWindow
             chooseClass.Show();
             chooseClass.Enabled = true;
         }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }
